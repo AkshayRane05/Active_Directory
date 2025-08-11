@@ -11,3 +11,22 @@
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 ```
 
+```
+import-Module ADDSDeployment
+```
+
+```
+Install-ADDSForest
+```
+
+```
+Get-NetIPAddress -IPAddress {DC-IPAddress}
+```
+
+```
+Get-DNSClientServerAddress
+```
+
+```
+Set-DNSClientServerAddress -IntefaceIndex 5 -ServerAddresses {DC-IPAddress}
+```
