@@ -1,5 +1,19 @@
 param([Parameter(Mandatory=$true)]$JSONFile)
 
+function RemoveADGroup(){
+    param([Parameter(Mandatory=$true)] $groupObject)
+
+    $name = $groupObject.name
+    Remove-ADGroup -Identity $name -Confirm:$false
+}
+
+function WeakenPasswordPolicy(){
+    secedit /export /cfg C:\Windows\Tasks\secpol.cfg
+    (Get-Content C:\Windows\Tasks\secpol.cfg).replace("PasswordComplexity = 1", "PasswordComplexity = 0").replace("MinimumPasswordLength = 7", "MinimumPasswordLength = 1") | Out-File C:\Windows\Tasks\secpol.cfg
+    secedit /configure /db c:\windows\security\local.sdb /cfg C:\Windows\Tasks\secpol.cfg /areas SECURITYPOLICY
+    rm -force C:\Windows\Tasks\secpol.cfg -confirm:$false
+}
+
 function CreateADGroup {
     param ([Parameter(Mandatory=$true)]$groupObject)
 
@@ -13,7 +27,7 @@ function CreateADGroup {
 }
 
 function CreateADUser {
-    param ([Parameter(Mandatory=$true)]$userObject)
+    param ([Parameter(Mandatory=$true)] $userObject)
 
     $name = $userObject.name
     $password = $userObject.password
@@ -26,7 +40,7 @@ function CreateADUser {
     # Create the AD user
     if (-not (Get-ADUser -Filter "SamAccountName -eq '$samAccountName'" -ErrorAction SilentlyContinue)) {
 
-        New-ADUser -Name $name -GivenName $firstname -Surname $lastname -UserPrincipalName $principalName@$Global:domain -SamAccountName $samAccountName -AccountPassword (ConvertTo-SecureString $password -AsPlainText -Force) -PassThru | Enable-ADAccount
+        New-ADUser -Name $name -GivenName $firstname -Surname $lastname -SamAccountName $SamAccountName -UserPrincipalName $principalname@$Global:Domain -AccountPassword (ConvertTo-SecureString $password -AsPlainText -Force) | Enable-ADAccount
 
         # Add user to each group
         foreach ($group_name in $userObject.groups) {
@@ -34,14 +48,14 @@ function CreateADUser {
                 Get-ADGroup -Identity "$group_name"
                 Add-ADGroupMember -Identity $group_name -Members $username
             }
-            catch [Microsoft.ActiveDirectory.Management.ADGroupNotFoundException] {
+            catch {
                 Write-Warning "Group '$group_name' not found"
             }
         }
-
     }
-    
 }
+
+WeakenPasswordPolicy
 
 $json = Get-Content -Path $JSONFile | ConvertFrom-Json
 

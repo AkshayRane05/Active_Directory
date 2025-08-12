@@ -3,14 +3,19 @@
     "groups":[
         {
             "name": "Employees"
+        },
+        {
+            "name": "Engineers"
         }
+
     ],
     "users": [
         {
             "name": "John Doe",
             "password" : "P@ssw0rd789",
             "groups": [
-                "Employees"
+                "Employees",
+                "Engineer"
             ]
         },
         {

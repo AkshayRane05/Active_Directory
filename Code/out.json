@@ -1,0 +1,902 @@
+﻿{
+    "domain":  "xyz.com",
+    "groups":  [
+                   {
+                       "name":  "Interns"
+                   },
+                   {
+                       "name":  "Developers"
+                   },
+                   {
+                       "name":  "Managers"
+                   },
+                   {
+                       "name":  "Sales"
+                   },
+                   {
+                       "name":  "Lawyers"
+                   },
+                   {
+                       "name":  "Engineers"
+                   },
+                   {
+                       "name":  "Employees"
+                   },
+                   {
+                       "name":  "Marketing"
+                   },
+                   {
+                       "name":  "Testers"
+                   },
+                   {
+                       "name":  "Execeutives"
+                   }
+               ],
+    "users":  [
+                  {
+                      "name":  "Jacintha Gadie",
+                      "password":  "hannah",
+                      "groups":  [
+                                     "Sales",
+                                     "Execeutives",
+                                     "Managers",
+                                     "Lawyers"
+                                 ]
+                  },
+                  {
+                      "name":  "Keelby Rigate",
+                      "password":  "pretty",
+                      "groups":  [
+                                     "Testers",
+                                     "Employees",
+                                     "Developers",
+                                     "Marketing"
+                                 ]
+                  },
+                  {
+                      "name":  "Kippy Chaster",
+                      "password":  "december",
+                      "groups":  [
+                                     "Managers"
+                                 ]
+                  },
+                  {
+                      "name":  "Margaret Murrill",
+                      "password":  "lorena",
+                      "groups":  [
+                                     "Lawyers"
+                                 ]
+                  },
+                  {
+                      "name":  "Marlie Salisbury",
+                      "password":  "kevin",
+                      "groups":  [
+                                     "Lawyers",
+                                     "Sales"
+                                 ]
+                  },
+                  {
+                      "name":  "Ardis Bouchier",
+                      "password":  "katherine",
+                      "groups":  [
+                                     "Engineers",
+                                     "Lawyers",
+                                     "Sales",
+                                     "Execeutives"
+                                 ]
+                  },
+                  {
+                      "name":  "Catina Forte",
+                      "password":  "vanessa",
+                      "groups":  [
+                                     "Managers",
+                                     "Interns",
+                                     "Engineers"
+                                 ]
+                  },
+                  {
+                      "name":  "Kiley Osgood",
+                      "password":  "babygirl1",
+                      "groups":  [
+                                     "Execeutives",
+                                     "Interns",
+                                     "Marketing"
+                                 ]
+                  },
+                  {
+                      "name":  "Kimbell Swain",
+                      "password":  "grace",
+                      "groups":  [
+                                     "Interns",
+                                     "Engineers",
+                                     "Marketing"
+                                 ]
+                  },
+                  {
+                      "name":  "Somerset Maleck",
+                      "password":  "cristian",
+                      "groups":  [
+                                     "Engineers",
+                                     "Developers",
+                                     "Lawyers"
+                                 ]
+                  },
+                  {
+                      "name":  "Gonzales Olver",
+                      "password":  "charlotte",
+                      "groups":  [
+                                     "Marketing",
+                                     "Sales",
+                                     "Engineers"
+                                 ]
+                  },
+                  {
+                      "name":  "Prissie Loverock",
+                      "password":  "secret",
+                      "groups":  [
+                                     "Execeutives",
+                                     "Lawyers",
+                                     "Sales"
+                                 ]
+                  },
+                  {
+                      "name":  "Gerty Bolliver",
+                      "password":  "sabrina",
+                      "groups":  [
+                                     "Execeutives",
+                                     "Testers",
+                                     "Employees",
+                                     "Marketing"
+                                 ]
+                  },
+                  {
+                      "name":  "Katharina Bailiss",
+                      "password":  "789456",
+                      "groups":  [
+                                     "Marketing"
+                                 ]
+                  },
+                  {
+                      "name":  "Matty Odde",
+                      "password":  "angelica",
+                      "groups":  [
+                                     "Execeutives",
+                                     "Interns",
+                                     "Developers",
+                                     "Managers"
+                                 ]
+                  },
+                  {
+                      "name":  "Hayes Bertlin",
+                      "password":  "456789",
+                      "groups":  [
+                                     "Engineers",
+                                     "Lawyers"
+                                 ]
+                  },
+                  {
+                      "name":  "Ross Tomaini",
+                      "password":  "skittles",
+                      "groups":  [
+                                     "Engineers",
+                                     "Developers"
+                                 ]
+                  },
+                  {
+                      "name":  "Garwin Spurdon",
+                      "password":  "peanut",
+                      "groups":  [
+                                     "Developers",
+                                     "Employees",
+                                     "Engineers"
+                                 ]
+                  },
+                  {
+                      "name":  "Gerladina Tale",
+                      "password":  "jesus",
+                      "groups":  [
+                                     "Employees",
+                                     "Execeutives",
+                                     "Lawyers",
+                                     "Sales"
+                                 ]
+                  },
+                  {
+                      "name":  "Casie Bollom",
+                      "password":  "654321",
+                      "groups":  [
+                                     "Managers",
+                                     "Testers",
+                                     "Employees"
+                                 ]
+                  },
+                  {
+                      "name":  "Melissa Cudby",
+                      "password":  "happy",
+                      "groups":  [
+                                     "Engineers",
+                                     "Managers",
+                                     "Execeutives",
+                                     "Testers"
+                                 ]
+                  },
+                  {
+                      "name":  "Carmen Rouf",
+                      "password":  "eeyore",
+                      "groups":  [
+                                     "Employees"
+                                 ]
+                  },
+                  {
+                      "name":  "Xenos Beames",
+                      "password":  "charlie",
+                      "groups":  [
+                                     "Employees",
+                                     "Marketing"
+                                 ]
+                  },
+                  {
+                      "name":  "Maye Blesing",
+                      "password":  "melanie",
+                      "groups":  [
+                                     "Lawyers",
+                                     "Developers",
+                                     "Managers",
+                                     "Employees"
+                                 ]
+                  },
+                  {
+                      "name":  "Urbain Reidie",
+                      "password":  "santiago",
+                      "groups":  [
+                                     "Employees",
+                                     "Testers",
+                                     "Sales"
+                                 ]
+                  },
+                  {
+                      "name":  "Rudolfo Dart",
+                      "password":  "alicia",
+                      "groups":  [
+                                     "Developers",
+                                     "Engineers",
+                                     "Execeutives"
+                                 ]
+                  },
+                  {
+                      "name":  "Claire Shedd",
+                      "password":  "love123",
+                      "groups":  [
+                                     "Execeutives",
+                                     "Engineers",
+                                     "Developers",
+                                     "Interns"
+                                 ]
+                  },
+                  {
+                      "name":  "Armin Jerok",
+                      "password":  "rangers",
+                      "groups":  [
+                                     "Managers",
+                                     "Testers",
+                                     "Developers"
+                                 ]
+                  },
+                  {
+                      "name":  "Alidia Ismay",
+                      "password":  "jesus1",
+                      "groups":  [
+                                     "Execeutives"
+                                 ]
+                  },
+                  {
+                      "name":  "Ferne Zarfati",
+                      "password":  "leonardo",
+                      "groups":  [
+                                     "Developers",
+                                     "Lawyers"
+                                 ]
+                  },
+                  {
+                      "name":  "Gloriana Babbidge",
+                      "password":  "jonathan",
+                      "groups":  [
+                                     "Managers",
+                                     "Developers",
+                                     "Testers",
+                                     "Marketing"
+                                 ]
+                  },
+                  {
+                      "name":  "Von Bozier",
+                      "password":  "jenny",
+                      "groups":  [
+                                     "Developers",
+                                     "Employees"
+                                 ]
+                  },
+                  {
+                      "name":  "Ethelin Baile",
+                      "password":  "karen",
+                      "groups":  [
+                                     "Managers"
+                                 ]
+                  },
+                  {
+                      "name":  "Rock Leuvre",
+                      "password":  "football",
+                      "groups":  [
+                                     "Interns",
+                                     "Marketing",
+                                     "Managers",
+                                     "Employees"
+                                 ]
+                  },
+                  {
+                      "name":  "Windham Peyntue",
+                      "password":  "yellow",
+                      "groups":  [
+                                     "Interns",
+                                     "Execeutives",
+                                     "Developers",
+                                     "Marketing"
+                                 ]
+                  },
+                  {
+                      "name":  "Hali Valek",
+                      "password":  "gemini",
+                      "groups":  [
+                                     "Lawyers",
+                                     "Interns",
+                                     "Marketing"
+                                 ]
+                  },
+                  {
+                      "name":  "Dimitry Rumsey",
+                      "password":  "qwertyuiop",
+                      "groups":  [
+                                     "Marketing",
+                                     "Employees",
+                                     "Sales"
+                                 ]
+                  },
+                  {
+                      "name":  "Kennedy Tofano",
+                      "password":  "denise",
+                      "groups":  [
+                                     "Employees",
+                                     "Testers",
+                                     "Lawyers",
+                                     "Execeutives"
+                                 ]
+                  },
+                  {
+                      "name":  "Ezra Bisterfeld",
+                      "password":  "angelito",
+                      "groups":  [
+                                     "Sales",
+                                     "Developers",
+                                     "Testers"
+                                 ]
+                  },
+                  {
+                      "name":  "Benedict Gabbott",
+                      "password":  "ladybug",
+                      "groups":  [
+                                     "Lawyers",
+                                     "Execeutives",
+                                     "Developers",
+                                     "Testers"
+                                 ]
+                  },
+                  {
+                      "name":  "Gert Grewes",
+                      "password":  "soccer",
+                      "groups":  [
+                                     "Sales",
+                                     "Lawyers",
+                                     "Engineers",
+                                     "Execeutives"
+                                 ]
+                  },
+                  {
+                      "name":  "Lorry Dowbakin",
+                      "password":  "peaches",
+                      "groups":  [
+                                     "Marketing"
+                                 ]
+                  },
+                  {
+                      "name":  "Karoly Angerstein",
+                      "password":  "buster",
+                      "groups":  [
+                                     "Developers",
+                                     "Employees",
+                                     "Testers"
+                                 ]
+                  },
+                  {
+                      "name":  "Melli Kopta",
+                      "password":  "bitch1",
+                      "groups":  [
+                                     "Lawyers"
+                                 ]
+                  },
+                  {
+                      "name":  "Enrique Meere",
+                      "password":  "chivas",
+                      "groups":  [
+                                     "Marketing"
+                                 ]
+                  },
+                  {
+                      "name":  "Vernice McKmurrie",
+                      "password":  "corazon",
+                      "groups":  [
+                                     "Developers"
+                                 ]
+                  },
+                  {
+                      "name":  "Gratiana Alebrooke",
+                      "password":  "monkey",
+                      "groups":  [
+                                     "Marketing",
+                                     "Lawyers"
+                                 ]
+                  },
+                  {
+                      "name":  "Victor Franzonello",
+                      "password":  "amores",
+                      "groups":  [
+                                     "Lawyers",
+                                     "Sales",
+                                     "Marketing"
+                                 ]
+                  },
+                  {
+                      "name":  "David Carlone",
+                      "password":  "marcus",
+                      "groups":  [
+                                     "Execeutives",
+                                     "Developers"
+                                 ]
+                  },
+                  {
+                      "name":  "Reg Shwalbe",
+                      "password":  "master",
+                      "groups":  [
+                                     "Testers",
+                                     "Employees"
+                                 ]
+                  },
+                  {
+                      "name":  "Brianna Roby",
+                      "password":  "111111",
+                      "groups":  [
+                                     "Testers",
+                                     "Engineers",
+                                     "Sales",
+                                     "Interns"
+                                 ]
+                  },
+                  {
+                      "name":  "Bink Letterese",
+                      "password":  "danielle",
+                      "groups":  [
+                                     "Execeutives"
+                                 ]
+                  },
+                  {
+                      "name":  "Harriett Dakers",
+                      "password":  "tigers",
+                      "groups":  [
+                                     "Marketing",
+                                     "Employees",
+                                     "Engineers",
+                                     "Testers"
+                                 ]
+                  },
+                  {
+                      "name":  "Andriana Ducker",
+                      "password":  "veronica",
+                      "groups":  [
+                                     "Managers",
+                                     "Developers"
+                                 ]
+                  },
+                  {
+                      "name":  "Meghan Parnham",
+                      "password":  "lovers",
+                      "groups":  [
+                                     "Sales",
+                                     "Engineers"
+                                 ]
+                  },
+                  {
+                      "name":  "Aldon Krysztofiak",
+                      "password":  "angel1",
+                      "groups":  [
+                                     "Managers",
+                                     "Testers",
+                                     "Employees"
+                                 ]
+                  },
+                  {
+                      "name":  "Kaitlin Tweedie",
+                      "password":  "jessie",
+                      "groups":  [
+                                     "Execeutives"
+                                 ]
+                  },
+                  {
+                      "name":  "Edwina Strathearn",
+                      "password":  "password",
+                      "groups":  [
+                                     "Lawyers"
+                                 ]
+                  },
+                  {
+                      "name":  "Julina Stockoe",
+                      "password":  "melissa",
+                      "groups":  [
+                                     "Sales",
+                                     "Developers",
+                                     "Engineers",
+                                     "Managers"
+                                 ]
+                  },
+                  {
+                      "name":  "Lew Fisby",
+                      "password":  "cantik",
+                      "groups":  [
+                                     "Sales",
+                                     "Testers"
+                                 ]
+                  },
+                  {
+                      "name":  "Livy Fozard",
+                      "password":  "maganda",
+                      "groups":  [
+                                     "Sales",
+                                     "Developers",
+                                     "Managers",
+                                     "Interns"
+                                 ]
+                  },
+                  {
+                      "name":  "Gerome Dizlie",
+                      "password":  "asdfgh",
+                      "groups":  [
+                                     "Testers",
+                                     "Execeutives",
+                                     "Employees",
+                                     "Lawyers"
+                                 ]
+                  },
+                  {
+                      "name":  "Michaeline Adamovitz",
+                      "password":  "johnny",
+                      "groups":  [
+                                     "Engineers",
+                                     "Execeutives",
+                                     "Managers",
+                                     "Developers"
+                                 ]
+                  },
+                  {
+                      "name":  "Dollie Phin",
+                      "password":  "colombia",
+                      "groups":  [
+                                     "Managers",
+                                     "Engineers",
+                                     "Interns",
+                                     "Lawyers"
+                                 ]
+                  },
+                  {
+                      "name":  "Myrah Baudi",
+                      "password":  "cancer",
+                      "groups":  [
+                                     "Testers",
+                                     "Developers",
+                                     "Engineers",
+                                     "Lawyers"
+                                 ]
+                  },
+                  {
+                      "name":  "Stephanus Nial",
+                      "password":  "harrypotter",
+                      "groups":  [
+                                     "Sales",
+                                     "Execeutives",
+                                     "Developers",
+                                     "Marketing"
+                                 ]
+                  },
+                  {
+                      "name":  "Lyndsie Cutford",
+                      "password":  "50cent",
+                      "groups":  [
+                                     "Interns"
+                                 ]
+                  },
+                  {
+                      "name":  "Emalia Please",
+                      "password":  "michael",
+                      "groups":  [
+                                     "Employees",
+                                     "Execeutives",
+                                     "Interns"
+                                 ]
+                  },
+                  {
+                      "name":  "Danny Hinners",
+                      "password":  "alyssa",
+                      "groups":  [
+                                     "Engineers"
+                                 ]
+                  },
+                  {
+                      "name":  "Carola Bengall",
+                      "password":  "poohbear",
+                      "groups":  [
+                                     "Sales",
+                                     "Marketing",
+                                     "Managers"
+                                 ]
+                  },
+                  {
+                      "name":  "Urbanus Minard",
+                      "password":  "andreea",
+                      "groups":  [
+                                     "Developers",
+                                     "Interns"
+                                 ]
+                  },
+                  {
+                      "name":  "Sigismund McInteer",
+                      "password":  "jackie",
+                      "groups":  [
+                                     "Engineers"
+                                 ]
+                  },
+                  {
+                      "name":  "Annadiane Collabine",
+                      "password":  "asshole",
+                      "groups":  [
+                                     "Lawyers"
+                                 ]
+                  },
+                  {
+                      "name":  "Nikaniki Aers",
+                      "password":  "123abc",
+                      "groups":  [
+                                     "Marketing",
+                                     "Sales"
+                                 ]
+                  },
+                  {
+                      "name":  "Brocky Sibray",
+                      "password":  "shannon",
+                      "groups":  [
+                                     "Execeutives",
+                                     "Interns"
+                                 ]
+                  },
+                  {
+                      "name":  "Joannes Wilcock",
+                      "password":  "katrina",
+                      "groups":  [
+                                     "Lawyers",
+                                     "Developers"
+                                 ]
+                  },
+                  {
+                      "name":  "Morse Benzi",
+                      "password":  "mommy1",
+                      "groups":  [
+                                     "Marketing",
+                                     "Interns",
+                                     "Testers",
+                                     "Employees"
+                                 ]
+                  },
+                  {
+                      "name":  "Forbes MacCleay",
+                      "password":  "miguel",
+                      "groups":  [
+                                     "Testers",
+                                     "Engineers",
+                                     "Employees",
+                                     "Sales"
+                                 ]
+                  },
+                  {
+                      "name":  "Shannon Perone",
+                      "password":  "linda",
+                      "groups":  [
+                                     "Developers",
+                                     "Lawyers"
+                                 ]
+                  },
+                  {
+                      "name":  "Urson Betts",
+                      "password":  "dolphin",
+                      "groups":  [
+                                     "Developers",
+                                     "Testers",
+                                     "Marketing"
+                                 ]
+                  },
+                  {
+                      "name":  "Alexia Durnell",
+                      "password":  "qwerty",
+                      "groups":  [
+                                     "Lawyers",
+                                     "Marketing",
+                                     "Managers"
+                                 ]
+                  },
+                  {
+                      "name":  "Verna Walkingshaw",
+                      "password":  "teamo",
+                      "groups":  [
+                                     "Engineers",
+                                     "Testers"
+                                 ]
+                  },
+                  {
+                      "name":  "Ronnie Lewsy",
+                      "password":  "mahalko",
+                      "groups":  [
+                                     "Testers"
+                                 ]
+                  },
+                  {
+                      "name":  "Emanuele Naylor",
+                      "password":  "september",
+                      "groups":  [
+                                     "Interns",
+                                     "Engineers"
+                                 ]
+                  },
+                  {
+                      "name":  "Cathe Plan",
+                      "password":  "monica",
+                      "groups":  [
+                                     "Developers",
+                                     "Interns",
+                                     "Sales",
+                                     "Employees"
+                                 ]
+                  },
+                  {
+                      "name":  "Vitia Alldred",
+                      "password":  "brandon",
+                      "groups":  [
+                                     "Testers"
+                                 ]
+                  },
+                  {
+                      "name":  "Burgess Groneway",
+                      "password":  "696969",
+                      "groups":  [
+                                     "Engineers",
+                                     "Testers",
+                                     "Managers"
+                                 ]
+                  },
+                  {
+                      "name":  "Immanuel McCome",
+                      "password":  "hottie",
+                      "groups":  [
+                                     "Testers",
+                                     "Employees"
+                                 ]
+                  },
+                  {
+                      "name":  "Dalli Walenta",
+                      "password":  "lovelove",
+                      "groups":  [
+                                     "Marketing",
+                                     "Employees",
+                                     "Execeutives"
+                                 ]
+                  },
+                  {
+                      "name":  "Winslow MacPhee",
+                      "password":  "blink182",
+                      "groups":  [
+                                     "Testers"
+                                 ]
+                  },
+                  {
+                      "name":  "Cos Dowgill",
+                      "password":  "tigger",
+                      "groups":  [
+                                     "Marketing",
+                                     "Interns",
+                                     "Lawyers"
+                                 ]
+                  },
+                  {
+                      "name":  "Carena Janout",
+                      "password":  "samuel",
+                      "groups":  [
+                                     "Managers",
+                                     "Engineers",
+                                     "Developers",
+                                     "Sales"
+                                 ]
+                  },
+                  {
+                      "name":  "Caritta Tillot",
+                      "password":  "barcelona",
+                      "groups":  [
+                                     "Marketing"
+                                 ]
+                  },
+                  {
+                      "name":  "Algernon Morston",
+                      "password":  "alexandra",
+                      "groups":  [
+                                     "Engineers"
+                                 ]
+                  },
+                  {
+                      "name":  "Bobbette Taaffe",
+                      "password":  "angels",
+                      "groups":  [
+                                     "Sales",
+                                     "Marketing",
+                                     "Managers"
+                                 ]
+                  },
+                  {
+                      "name":  "Arther McLucas",
+                      "password":  "scooby",
+                      "groups":  [
+                                     "Managers"
+                                 ]
+                  },
+                  {
+                      "name":  "Anya Brett",
+                      "password":  "silver",
+                      "groups":  [
+                                     "Marketing",
+                                     "Engineers",
+                                     "Testers",
+                                     "Lawyers"
+                                 ]
+                  },
+                  {
+                      "name":  "Michele Duiged",
+                      "password":  "january",
+                      "groups":  [
+                                     "Marketing",
+                                     "Lawyers",
+                                     "Sales",
+                                     "Employees"
+                                 ]
+                  },
+                  {
+                      "name":  "Damien Conniam",
+                      "password":  "benfica",
+                      "groups":  [
+                                     "Testers",
+                                     "Employees",
+                                     "Lawyers",
+                                     "Developers"
+                                 ]
+                  },
+                  {
+                      "name":  "Emalee Houtbie",
+                      "password":  "paola",
+                      "groups":  [
+                                     "Employees",
+                                     "Testers",
+                                     "Execeutives"
+                                 ]
+                  }
+              ]
+}
