@@ -1,15 +1,26 @@
-param([Parameter(Mandatory=$true)]$JSONFile)
+param(
+    [Parameter(Mandatory=$true)] $JSONFile,
+    [switch] $Undo
+)
 
 function RemoveADGroup(){
     param([Parameter(Mandatory=$true)] $groupObject)
 
     $name = $groupObject.name
+
     Remove-ADGroup -Identity $name -Confirm:$false
 }
 
 function WeakenPasswordPolicy(){
     secedit /export /cfg C:\Windows\Tasks\secpol.cfg
     (Get-Content C:\Windows\Tasks\secpol.cfg).replace("PasswordComplexity = 1", "PasswordComplexity = 0").replace("MinimumPasswordLength = 7", "MinimumPasswordLength = 1") | Out-File C:\Windows\Tasks\secpol.cfg
+    secedit /configure /db c:\windows\security\local.sdb /cfg C:\Windows\Tasks\secpol.cfg /areas SECURITYPOLICY
+    rm -force C:\Windows\Tasks\secpol.cfg -confirm:$false
+}
+
+function StrengthenPasswordPolicy(){
+    secedit /export /cfg C:\Windows\Tasks\secpol.cfg
+    (Get-Content C:\Windows\Tasks\secpol.cfg).replace("PasswordComplexity = 0", "PasswordComplexity = 1").replace("MinimumPasswordLength = 1", "MinimumPasswordLength = 7") | Out-File C:\Windows\Tasks\secpol.cfg
     secedit /configure /db c:\windows\security\local.sdb /cfg C:\Windows\Tasks\secpol.cfg /areas SECURITYPOLICY
     rm -force C:\Windows\Tasks\secpol.cfg -confirm:$false
 }
@@ -40,7 +51,7 @@ function CreateADUser {
     # Create the AD user
     if (-not (Get-ADUser -Filter "SamAccountName -eq '$samAccountName'" -ErrorAction SilentlyContinue)) {
 
-        New-ADUser -Name $name -GivenName $firstname -Surname $lastname -SamAccountName $SamAccountName -UserPrincipalName $principalname@$Global:Domain -AccountPassword (ConvertTo-SecureString $password -AsPlainText -Force) | Enable-ADAccount
+        New-ADUser -Name $name -GivenName $firstname -Surname $lastname -SamAccountName $SamAccountName -UserPrincipalName $principalname@$Global:Domain -AccountPassword (ConvertTo-SecureString $password -AsPlainText -Force) -PassThru | Enable-ADAccount
 
         # Add user to each group
         foreach ($group_name in $userObject.groups) {
@@ -55,16 +66,39 @@ function CreateADUser {
     }
 }
 
-WeakenPasswordPolicy
+function RemoveADUser {
+    param( [Parameter(Mandatory=$true)] $userObject)
 
-$json = Get-Content -Path $JSONFile | ConvertFrom-Json
+    $name = $userObject.name
 
-$Global:domain = $json.domain
+    $firstname, $lastname = $userObject.name -split ' '
+    $username = ($firstname[0] + $lastname).ToLower()
+    $samAccountName = $username
 
-foreach ($group in $json.groups) {
-    CreateADGroup $group
+    Remove-ADUser -Identity $samAccountName -confirm:$false
 }
 
-foreach ($user in $json.users) {
-    CreateADUser $user
+$json = Get-Content -Path $JSONFile | ConvertFrom-Json
+$Global:domain = $json.domain
+
+if ( -not $Undo) {
+    WeakenPasswordPolicy
+
+    foreach ($group in $json.groups) {
+        CreateADGroup $group
+    }
+
+    foreach ($user in $json.users) {
+        CreateADUser $user
+    }
+}else {
+    StrengthenPasswordPolicy
+
+    foreach ($user in $json.users) {
+        RemoveADUser $user
+    }
+
+    foreach ($group in $json.groups) {
+        RemoveADGroup $group
+    }
 }
